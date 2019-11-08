@@ -25,7 +25,7 @@ Para poder correr la imagen localmente, primero debe descargar o clonar el Git, 
 
 Luego debe abrir la terminal en la carpeta y copiar la ruta de la misma, e iniciar sesión en consola como super usuario, a continuación, vera el código de cómo acceder como super usuario a la carpeta.
 
- <img width="500" alt="1" src="https://user-images.githubusercontent.com/50923637/68407434-8f841c00-0151-11ea-94b3-dbdc14792345.png">
+<img width="927" alt="Recorte1" src="https://user-images.githubusercontent.com/40369712/68488077-4ba51b80-0212-11ea-8703-0189f18b7195.png">
 
 ```
 sudo –i
