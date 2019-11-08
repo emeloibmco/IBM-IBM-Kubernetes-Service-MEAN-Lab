@@ -67,7 +67,7 @@ docker 	run -p 8000:3000 -d appnode
 
 Luego puede verificar el despliegue en el localhost:8000, el localhost depende del que usted asigno para su aplicación, en este caso es el 8000, para verificar en su navegador ingrese localhost:8000 y podrá ver su aplicación como se ve a continuación.
 
-<img width="500" height="200" alt="4" src="https://user-images.githubusercontent.com/50923637/68410708-2dc6b080-0157-11ea-89a9-c261ac545990.png">
+<img width="928" alt="Recorte2" src="https://user-images.githubusercontent.com/40369712/68488783-cc184c00-0213-11ea-9031-32f72eb25498.png">
 
 ## Despliegue imagen en el clúster de kubernetes creado previamente
 
