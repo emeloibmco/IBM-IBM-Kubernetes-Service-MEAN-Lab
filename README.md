@@ -152,6 +152,6 @@ Verifique en su navegador la aplicación en la dirección como vera a continuaci
 ## Referencias
 
 * https://github.com/IBM-Cloud/weather-company-data-demo
-*
-*
+* https://cloud.ibm.com/docs/node?topic=nodejs-enable_existing&locale=es
+* 
 *
