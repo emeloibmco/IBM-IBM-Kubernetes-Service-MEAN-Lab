@@ -61,7 +61,6 @@ Luego debe correr la imagen docker que se previamente creo, para esto debe ejecu
 ```
 docker 	run -p <Port de salida>:<Port de entrada> -d <nombre de la imagen>
 docker 	run -p 8000:3000 -d appnode
-
 ```
 
 <img width="700" alt="4" src="https://user-images.githubusercontent.com/50923637/68409894-e5f35980-0155-11ea-870e-f6b3e7edc736.png">
