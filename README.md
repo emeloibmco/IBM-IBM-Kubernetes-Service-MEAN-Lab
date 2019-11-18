@@ -31,7 +31,6 @@ Luego debe abrir la terminal en la carpeta y copiar la ruta de la misma, e inici
 sudo –i
 cd ..
 cd  home/user/<Ruta del proyecto>
-cd home/user/ <Ruta del proyecto>
 ```
 <img width="500" alt="2" src="https://user-images.githubusercontent.com/50923637/68408076-b5f68700-0152-11ea-9283-a4583fd0b55d.png">
 
@@ -41,7 +40,7 @@ Luego usted debe crear la imagen Docker con el Docker local, para realizar esta 
 
 ```
 docker build -t <Nombre de la imagen> .
-docker build -t appnode .
+Ejemplo: docker build -t appnode .
 ```
 
 Después de ejecutar el comando le aparecerán varios datos de la compilación del comando, pero debe estar pendiente de que al final de todo pueda ver lo siguiente que es la confirmación de la creación de la imagen, donde vera primero el ID y luego la etiqueta de la imagen.
@@ -69,11 +68,11 @@ Luego puede verificar el despliegue en el localhost:8000, el localhost depende d
 
 <img width="928" alt="Recorte2" src="https://user-images.githubusercontent.com/40369712/68488783-cc184c00-0213-11ea-9031-32f72eb25498.png">
 
-## Despliegue imagen en el clúster de kubernetes creado previamente
+## Creacion y despliegue de una imagen en el clúster de kubernetes creado previamente
 
-Para realizar el despliegue de la aplicación correctamente, primero debe configurar el espacio de trabajo.
+Para realizar el despliegue de la aplicación correctamente, primero debe configurar el espacio de trabajo (region, grupo de recurso y cluster).
 
-* Para el paso anterior usted debe revisar la guía 0 de kubrenetes, para configurar correctamente la región, el grupo de recursos y el cluster con el que se desea trabajar.
+* Para el paso anterior usted debe revisar la guía 0 de kubernetes, para configurar correctamente la región, el grupo de recursos y el cluster con el que se desea trabajar.
 
 Luego de realizar el paso anterior usted debe crear el namespace donde alojara su aplicación, para hacer eso usted debe ejecutar el siguiente comando en su terminal.
 
@@ -87,7 +86,7 @@ Luego debe crear la imagen docker en el container register de IBM Cloud, para re
 
 ```
 ibmcloud cr build --tag us.icr.io/<namespace>/<nombre de la imagen> .
-ibmcloud cr build --tag us.icr.io/pruebanamespace/appnodemongos .
+Ejemplo: ibmcloud cr build --tag us.icr.io/pruebanamespace/appnodemongos .
 ibmcloud cr namespace-list
 ```
 
@@ -96,7 +95,7 @@ ibmcloud cr namespace-list
 Despues de eso debe crear el servicio del despliegue en kubernetes para realizar eso ejecutara los siguientes comandos y para verificar que se realizo correctamente vera la siguiente imagen.
 
 ```
-kubectl create deployment <nombreimagen>--image=us.icr.io/<manespace> /<nombreimagen> 
+kubectl create deployment <nombreimagen> --image=us.icr.io/<manespace>/<nombreimagen> 
 kubectl create deployment appnodemongos --image=us.icr.io/pruebanamespace/appnodemongos
 ```
 
@@ -106,7 +105,7 @@ Luego usted debe exponer la imagen docker en el puerto que configuro.
 
 ```
 kubectl expose deployment/<nombreimagen> --type=NodePort --port=<Port entrada>
-kubectl expose deployment/appnodemongos --type=NodePort --port=3000
+Ejemplo: kubectl expose deployment/appnodemongos --type=NodePort --port=3000
 ```
 
 <img width="900" height="30" alt="10" src="https://user-images.githubusercontent.com/50923637/68425518-409bae00-0174-11ea-9ff3-2453eb3cc566.png">
@@ -126,7 +125,7 @@ Despues debe tomar nota de la ip publica del cluster ejecutando el siguiente com
 
 ```
 ibmcloud cs workers <nombre del cluster>
-ibmcloud cs workers iks-demo
+Ejemplo: ibmcloud cs workers iks-demo
 ```
 
 <img width="700" alt="12" src="https://user-images.githubusercontent.com/50923637/68426065-5493df80-0175-11ea-86ba-9b9b3e96063c.png">
