@@ -150,7 +150,6 @@ Verifique en su navegador la aplicación en la dirección como vera a continuaci
 
 ## Referencias
 
-* https://github.com/IBM-Cloud/weather-company-data-demo
 * Habilitar aplicaciones Node.js existentes para despliegue en la nube
       https://cloud.ibm.com/docs/node?topic=nodejs-enable_existing&locale=es
 * Contenerizar una aplicacion web Node.js
