@@ -75,21 +75,25 @@ Para realizar el despliegue de la aplicación correctamente, primero debe config
 * Para el paso anterior usted debe revisar la guía 0 de kubernetes, para configurar correctamente la región, el grupo de recursos y el cluster con el que se desea trabajar.
 
 Inicio de sesion en la consola de IBM Cloud en la region y el grupo de recursos del cluster
-``
+
+```
 ibmcloud login -a cloud.ibm.com -r <region> -g <grupo de recursos>
 Ejemplo: ibmcloud login -a cloud.ibm.com -r us-east -g app-demo
-``    
+```
+
 Descarga de los archivos de configuracion para el cluster
-``
+
+```
 ibmcloud ks cluster config --cluster <ID_Cluster>
 Ejemplo: ibmcloud ks cluster config --cluster bl1gdkaw09sj8dmer1cg
-``
+```
 
 
 Luego de realizar el paso anterior usted debe crear el namespace donde alojara su aplicación, para hacer eso usted debe ejecutar el siguiente comando en su terminal.
 
 ```
 ibmcloud cr namespace-add <my_namespace>
+
 Ejemplo: ibmcloud cr namespace-add pruebanamespace
 ```
 <img width="500" height="150" alt="7" src="https://user-images.githubusercontent.com/50923637/68423795-bbfb6080-0170-11ea-84d4-e631ddbbebc7.png">
