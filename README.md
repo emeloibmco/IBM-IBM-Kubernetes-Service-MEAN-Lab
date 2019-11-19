@@ -70,9 +70,8 @@ Luego puede verificar el despliegue en el localhost:8000, el localhost depende d
 
 ## Creacion y despliegue de una imagen en el clúster de kubernetes creado previamente
 
-Para realizar el despliegue de la aplicación correctamente, primero debe configurar el espacio de trabajo (region, grupo de recurso y cluster).
+Para realizar el despliegue de la aplicación correctamente, primero debe configurar el espacio de trabajo como se ve a continuación (region, grupo de recurso y cluster).
 
-* Para el paso anterior usted debe revisar la guía 0 de kubernetes, para configurar correctamente la región, el grupo de recursos y el cluster con el que se desea trabajar.
 
 Inicio de sesion en la consola de IBM Cloud en la region y el grupo de recursos del cluster
 
