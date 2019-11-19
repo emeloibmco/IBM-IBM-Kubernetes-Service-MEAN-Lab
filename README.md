@@ -59,7 +59,7 @@ Luego debe correr la imagen docker que se previamente creo, para esto debe ejecu
 
 ```
 docker 	run -p <Port de salida>:<Port de entrada> -d <nombre de la imagen>
-docker 	run -p 8000:3000 -d appnode
+Ejemplo: docker 	run -p 8000:3000 -d appnode
 ```
 
 <img width="700" alt="4" src="https://user-images.githubusercontent.com/50923637/68409894-e5f35980-0155-11ea-870e-f6b3e7edc736.png">
@@ -78,7 +78,7 @@ Luego de realizar el paso anterior usted debe crear el namespace donde alojara s
 
 ```
 ibmcloud cr namespace-add <my_namespace>
-ibmcloud cr namespace-add pruebanamespace
+Ejemplo: ibmcloud cr namespace-add pruebanamespace
 ```
 <img width="500" height="150" alt="7" src="https://user-images.githubusercontent.com/50923637/68423795-bbfb6080-0170-11ea-84d4-e631ddbbebc7.png">
 
@@ -96,7 +96,7 @@ Despues de eso debe crear el servicio del despliegue en kubernetes para realizar
 
 ```
 kubectl create deployment <nombreimagen> --image=us.icr.io/<manespace>/<nombreimagen> 
-kubectl create deployment appnodemongos --image=us.icr.io/pruebanamespace/appnodemongos
+Ejemplo: kubectl create deployment appnodemongos --image=us.icr.io/pruebanamespace/appnodemongos
 ```
 
 <img width="900" height="30" alt="9" src="https://user-images.githubusercontent.com/50923637/68425142-768c6280-0173-11ea-8b9c-c55af3cca981.png">
