@@ -15,7 +15,7 @@ Hands on para realizar el despliegue de una aplicación Node.js en kubernetes.
 ## Requisitos previos
 
 * Tener creada una aplicación de node.js.
-* Tener un clúster aprovisionado y configurado correctamente (Puede ver cómo realizar este requisito en la guía del laboratorio 1).
+* Tener un clúster aprovisionado y configurado correctamente.
 * Debe tener el Dockerfile de la aplicación, para realizar la habilitación de la aplicación de node.js para el correcto despliegue en la nube y su respectiva creación del Dockerfile se puede dirigir al siguiente enlace: https://cloud.ibm.com/docs/node?topic=nodejs-enable_existing&locale=es 
 
 ## Correr imagen localmente
