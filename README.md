@@ -49,7 +49,7 @@ Después de ejecutar el comando le aparecerán varios datos de la compilación d
 Luego usted debe verificar que se ha creado la imagen Docker eso lo realiza con el siguiente comando.
 
 ```
-docker 	images
+docker images
 ```
 
 Luego debe correr la imagen docker que se previamente creo, para esto debe ejecutar el siguiente comando, donde debe modificar el puerto de salida, el puerto de entrada y el nombre de la imagen. 
@@ -57,8 +57,8 @@ Luego debe correr la imagen docker que se previamente creo, para esto debe ejecu
 `Nota: El puerto está en el 3000 por defecto, pero si usted desea que se realice a otro puerto debe realizar el mapeo sobre el puerto al que quiere exponer la aplicación, en este caso se mapeo para exponer la aplicación en el puerto 8000.`
 
 ```
-docker 	run -p <Port de salida>:<Port de entrada> -d <nombre de la imagen>
-Ejemplo: docker 	run -p 8000:3000 -d appnode
+docker run -p <Port de salida>:<Port de entrada> -d <nombre de la imagen>
+Ejemplo: docker run -p 8000:3000 -d appnode
 ```
 
 <img width="700" alt="4" src="https://user-images.githubusercontent.com/50923637/68409894-e5f35980-0155-11ea-870e-f6b3e7edc736.png">
